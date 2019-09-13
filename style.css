@@ -3,20 +3,54 @@ a {
 }
 
 .jumbotronHeading{
-    color: #707070;
-    font: 300;
+    color: #ffffff;
+    font: 900;
     font-family: 'Nanum Gothic', sans-serif;
     font-weight: 300;
-    margin-top: 0px;
-    padding-top: 30px;
-    margin-right: 5px;
+    margin-top: 10px;
+    padding-top: 50px;
+    margin-left: 50px;
+}
+
+.jumbopara {
+    color: #ffffff;
+    font: 300;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 200px;
+
 }
 
 .banner{
-    background: linear-gradient(#c2a5fa, #fafa9c);
-    height: 400px;
+    background: linear-gradient(-90deg,  #E38C8A, #c2a5fa, #8AD8E3);
+    animation: gradientBG 10s ease infinite;
+    height: 40vw;
+    background-size: 400% 400%;
+    display: flex;
 
 }
+
+@keyframes gradientBG{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.banner-projects {
+    background: #ffffff;
+}
+.banner-projects div image{
+    display: flex;
+}
+
 
 .center {
     display: block;
@@ -36,6 +70,8 @@ a {
 }
 
 
+
+
 .Tiles-eff {
     margin-left: 5%;
     margin-right: 5%;
@@ -45,7 +81,7 @@ a {
     width: 50%;
     height: 50%;
     text-align: center;
-    box-shadow: 2px 3px 20px #cccccc;
+    
     
 }
 
@@ -55,6 +91,9 @@ a {
     height: 1000px;
     background-color: black;
     margin-left: 5%;
+}
+.navbar {
+    height: 100px;
 }
 
 .nav-text{
@@ -67,15 +106,16 @@ a {
 .connect-btn{
     background-color: transparent;
     border: 4px solid white;
-    width: 200px;
+    width: 250px;
     height: 50px;
     position: absolute;
-    top: 50%;
-    left: 42%;
+    top: 75%;
+    left: 40%;
+    
     
 }
 .connect-btn h3{
-    color: #707070;
+    color: #ffffff;
     font-size: 25px;
     font-family: 'Nanum Gothic', sans-serif;
     font-weight: 300;
@@ -127,7 +167,7 @@ a {
     align-self: baseline;
     -moz-box-align: end;
 }
-.workTiles h1{
+.workTiles-resume h1{
     color: #c2a5fa;
     font: 300;
     font-family: 'Nanum Gothic', sans-serif;
@@ -151,20 +191,62 @@ a {
     box-align: -5px;
     
 }
-.btn {
-    color: #c2a5fa;
+.btn:hover {
+    background-color: #dbccff;
 
 
 }
-.btn:hover{
-    background-color:#c2a5fa;
-}
+
 
 .Tiles-eff:hover{
-    background-color: #c2a5fa;
+    background-color: #dbccff;
 
 
 }
 .connect-btn:hover{
-    background-color: #c2a5fa;
+    background-color: #dbccff;
+    fill-opacity: 50%;
+}
+
+.logo {
+    margin-left: -100px;
+    padding-left: 10px;
+    box-align: -50px;
+}
+.myicon {
+    margin-right: 200px;
+    padding-right: 10px;
+    box-align: 250px;
+    margin-top: 80px;
+
+}
+.contact {
+    display: flex;
+    padding-bottom: 2vw;
+
+    
+}
+.contact div a{
+    color: #000000;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 1vw;
+    font-size: 1.2vw;
+}
+
+.workTiles-projects {
+    display: contents;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    margin-bottom: 5vw;
+
+}
+
+.workTiles-projects div p{
+    padding-bottom: 1vw;
+}
+
+.workTiles-projects div a{
+    display: flex;
 }
